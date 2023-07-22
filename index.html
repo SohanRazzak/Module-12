@@ -5,22 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="roboto">
     <!-- header section  -->
     <header class="bg-[#FFFBF0;]">
         <div class="max-w-6xl mx-auto">
             <!-- nav bar -->
-            <nav class="flex justify-between max-w-6xl items-center pt-10">
+            <nav class="flex flex-col md:flex-row  justify-between max-w-6xl items-center pt-10 pb-4 px-2 gap-2">
                 <img class="w-70 h-10" src="icons/logo.png" alt="">
-                <ul class="flex justify-center gap-12">
+                <ul class="flex justify-center gap-12 text-gray-800">
                     <li>Home</li>
                     <li>Product</li>
                     <li>About Us</li>
                     <li>Contact Us</li>
                 </ul>
             </nav>
+            <!-- banner section  -->
+            <div class="flex flex-col gap-4 md:flex-row justify-between items-center px-2 pt-3 pb-10 md:pb-14">
+                <div>
+                    <h1 class="bebas text-7xl uppercase mb-2"><span class="text-[#FABE4C]">Be the Penguins</span>
+                    <br>
+                    <span class="text-[#363958;]">of Winter</span>
+                    </h1>
+                    <p class="text-[#3E3E3E] mb-3">Awesome winter fashion collection for you!
+                        <br>
+                        Look cool from every angle
+                    </p>
+                    <button class="font-bold text-white bg-gradient-to-b from-[#A4BC46] to-[#85A019] px-8 py-4 rounded-xl mb-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                          </svg>                          
+                        buy now
+                    </button>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="images/model.png" alt="">
+                </div>
+            </div>
         </div>
     </header>
     <!-- main section  -->
